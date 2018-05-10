@@ -12,7 +12,7 @@
     - [Formatierung](#formatierung)
     - [Kommentare](#kommentare)
     - [OOCSS und BEM](#oocss-und-bem)
-    - [ID Selectors](#id-selectors)
+    - [ID Selektoren](#id-selektoren)
     - [JavaScript hooks](#javascript-hooks)
     - [Border](#border)
 1. [Sass](#sass)
@@ -170,9 +170,9 @@ function ListingCard() {
 
 ### ID Selektoren
 
-Es ist zwar möglich, Elemente nach ID in CSS auszuwählen, sollte aber generell als Anti-Pattern betrachtet werden. ID-Selektoren führen ein unnötig hohes Maß an [Spezifität] (https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) in Ihre Regeldeklarationen ein und sind nicht wiederverwendbar.
+Es ist zwar möglich, Elemente nach ID in CSS auszuwählen, sollte aber generell als Anti-Pattern betrachtet werden. ID-Selektoren führen ein unnötig hohes Maß an [Spezifität](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) in Ihre Regeldeklarationen ein und sind nicht wiederverwendbar.
 
-Weitere Informationen zu diesem Thema finden Sie im Artikel [CSS Wizardry's article] (http://csswizardry.com/2014/07/hacks-for-dealing-with-specificity/) über den Umgang mit der Spezifität.
+Weitere Informationen zu diesem Thema finden Sie im Artikel [Artikel von CSS Wizardry's](http://csswizardry.com/2014/07/hacks-for-dealing-with-specificity/) über den Umgang mit der Spezifität.
 
 ### JavaScript hooks
 
