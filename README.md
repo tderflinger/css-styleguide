@@ -288,7 +288,7 @@ Wenn Selektoren so lang werden, schreiben Sie wahrscheinlich CSS, das:
 * nicht wiederverwendbar ist
 
 
-Nochmals: **Verschachtele niemals ID selectors!**
+Nochmals: **Verschachtele niemals ID Selektoren!**
 
 Wenn Sie zuerst einen ID-Selektor verwenden müssen (und Sie sollten wirklich versuchen, ohne auszukommen), sollten diese niemals verschachtelt werden. Wenn Sie sich dabei erwischen, müssen Sie Ihr Markup erneut überprüfen und herausfinden, warum diese starke Spezifität erforderlich ist. Wenn Sie gut geformtes HTML und CSS schreiben, sollten Sie dies **niemals** tun müssen.
 
