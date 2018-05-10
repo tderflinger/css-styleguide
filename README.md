@@ -132,8 +132,8 @@ Aus diesen Gründen empfehlen wir eine Kombination von OOCSS und BEM:
 
 **BEM**, oder "Block-Element-Modifier", ist eine _Namenskonvention_ für Klassen in HTML und CSS. Es wurde ursprünglich von Yandex mit großen Codebasen und Skalierbarkeit im Auge entwickelt und kann als eine solide Reihe von Richtlinien für die Umsetzung von OOCSS dienen.
 
-  * CSS Trick's [BEM 101](https://css-tricks.com/bem-101/)
-  * Harry Roberts' [introduction to BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
+  * CSS Trick's [BEM 101](https://css-tricks.com/bem-101/) (Englisch)
+  * Harry Roberts' [introduction to BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) (Englisch)
 
 Wir empfehlen eine Variante von BEM mit PascalCased "Blöcken", die in Kombination mit Komponenten (z.B. React) besonders gut funktioniert. Unterstriche und Bindestriche werden weiterhin für Modifikatoren und Kinder verwendet.
 
@@ -172,7 +172,7 @@ function ListingCard() {
 
 Es ist zwar möglich, Elemente nach ID in CSS auszuwählen, sollte aber generell als Anti-Pattern betrachtet werden. ID-Selektoren führen ein unnötig hohes Maß an [Spezifität](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) in Ihre Regeldeklarationen ein und sind nicht wiederverwendbar.
 
-Weitere Informationen zu diesem Thema findest Du im [Artikel von CSS Wizardry's](http://csswizardry.com/2014/07/hacks-for-dealing-with-specificity/) über den Umgang mit der Spezifität.
+Weitere Informationen zu diesem Thema findest Du im [Artikel von CSS Wizardry's](http://csswizardry.com/2014/07/hacks-for-dealing-with-specificity/) (Englisch) über den Umgang mit der Spezifität.
 
 ### JavaScript-Haken
 
