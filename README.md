@@ -212,7 +212,7 @@ Verwenden Sie `0` anstelle von `none`, um anzugeben, dass ein Stil keinen Rahmen
 * Verwende die `.scss` Syntax, niemals die ursprüngliche `.sass` Syntax.
 * Ordnen Sie Ihre regulären CSS und `@include` Deklarationen logisch an (siehe unten)
 
-### Ordnung der Eigenschaftsdeklarationen
+### Ordnung
 
 1. Eigenschaftsdeklarationen
 
