@@ -7,9 +7,9 @@
 1. [Terminologie](#terminologie)
     - [Regeldeklaration](#regeldeklaration)
     - [Selektoren](#selektoren)
-    - [Properties](#properties)
+    - [Eigenschaften](#eigenschaften)
 1. [CSS](#css)
-    - [Formatting](#formatting)
+    - [Formatierung](#formatierung)
     - [Comments](#comments)
     - [OOCSS and BEM](#oocss-and-bem)
     - [ID Selectors](#id-selectors)
@@ -75,9 +75,9 @@ Schließlich geben Eigenschaften den ausgewählten Elementen einer Regeldeklarat
 * Nutze keine ID Selektoren
 * Wenn Du mehrere Selektoren in einer Regeldeklaration verwenden, gib jedem Selektor eine eigene Zeile.
 * Setze ein Leerzeichen vor die öffnende Klammer `{` in Regeldeklarationen.
-* Setze in Eigenschaften ein Leerzeichen nach, aber nicht vor dem Zeichen `:`.
-* Setze schließende Klammern `}` von Regeldeklarationen auf eine neue Zeile
-* Setze Leerzeilen zwischen Regeldeklarationen
+* Setze in Eigenschaften ein Leerzeichen nach, aber nicht vor dem Zeichen `:`
+* Setze schließende Klammern `}` von Regeldeklarationen auf eine neue Zeile.
+* Setze Leerzeilen zwischen Regeldeklarationen.
 
 **Schlecht**
 
@@ -108,24 +108,24 @@ Schließlich geben Eigenschaften den ausgewählten Elementen einer Regeldeklarat
 }
 ```
 
-### Comments
+### Kommentare
 
-* Prefer line comments (`//` in Sass-land) to block comments.
-* Prefer comments on their own line. Avoid end-of-line comments.
-* Write detailed comments for code that isn't self-documenting:
-  - Uses of z-index
-  - Compatibility or browser-specific hacks
+* Bevorzuge Zeilen-Kommentare (`//` in Sass-Land), vor Blockkommentaren.
+* Bevorzugen Sie Kommentare auf einer eigenen Zeile. Vermeiden Sie Kommentare am Zeilenende.
+* Schreiben Sie detaillierte Kommentare für Code, der nicht selbstdokumentierend ist:
+  - Nutzung des z-index
+  - Kompatibilität oder browserspezifische Hacks
 
-### OOCSS and BEM
+### OOCSS und BEM
 
-We encourage some combination of OOCSS and BEM for these reasons:
+Aus diesen Gründen empfehlen wir eine Kombination von OOCSS und BEM:
 
-  * It helps create clear, strict relationships between CSS and HTML
-  * It helps us create reusable, composable components
-  * It allows for less nesting and lower specificity
-  * It helps in building scalable stylesheets
+  * Es hilft, klare, strenge Beziehungen zwischen CSS und HTML zu schaffen.
+  * Es hilft uns, wiederverwendbare, zusammensetzbare Komponenten zu schaffen.
+  * Es ermöglicht eine geringere Verschachtelung und eine geringere Spezifizität.
+  * Es hilft bei der Erstellung skalierbarer Stylesheets.
 
-**OOCSS**, or “Object Oriented CSS”, is an approach for writing CSS that encourages you to think about your stylesheets as a collection of “objects”: reusable, repeatable snippets that can be used independently throughout a website.
+**OOCSS**, oder "Object Oriented CSS", ist ein Ansatz zum Schreiben von CSS, der Dich dazu anregt, Deine Stylesheets als eine Sammlung von "Objekten" zu betrachten: wiederverwendbare, wiederholbare Schnipsel, die unabhängig voneinander auf einer Website verwendet werden können.
 
   * Nicole Sullivan's [OOCSS wiki](https://github.com/stubbornella/oocss/wiki)
   * Smashing Magazine's [Introduction to OOCSS](http://www.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/)
