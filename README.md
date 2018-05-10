@@ -6,7 +6,7 @@
 
 1. [Terminologie](#terminologie)
     - [Regeldeklaration](#regeldeklaration)
-    - [Selectors](#selectors)
+    - [Selektoren](#selektoren)
     - [Properties](#properties)
 1. [CSS](#css)
     - [Formatting](#formatting)
@@ -63,23 +63,23 @@ Schließlich geben Eigenschaften den ausgewählten Elementen einer Regeldeklarat
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ nach oben](#inhaltsverzeichnis)**
 
 ## CSS
 
-### Formatting
+### Formatierung
 
-* Use soft tabs (2 spaces) for indentation
-* Prefer dashes over camelCasing in class names.
-  - Underscores and PascalCasing are okay if you are using BEM (see [OOCSS and BEM](#oocss-and-bem) below).
-* Do not use ID selectors
-* When using multiple selectors in a rule declaration, give each selector its own line.
-* Put a space before the opening brace `{` in rule declarations
-* In properties, put a space after, but not before, the `:` character.
-* Put closing braces `}` of rule declarations on a new line
-* Put blank lines between rule declarations
+* Verwende Soft Tabs (2 Leerzeichen) für die Einrückung.
+* Bevorzuge Bindestriche gegenüber camelCasing in Klassennamen.
+  - Unterstriche und PascalCasing sind in Ordnung, wenn Sie BEM verwenden (siehe[OOCSS und BEM](#oocss-and-bem) unten).
+* Nutze keine ID Selektoren
+* Wenn Du mehrere Selektoren in einer Regeldeklaration verwenden, gib jedem Selektor eine eigene Zeile.
+* Setze ein Leerzeichen vor die öffnende Klammer `{` in Regeldeklarationen.
+* Setze in Eigenschaften ein Leerzeichen nach, aber nicht vor dem Zeichen `:`.
+* Setze schließende Klammern `}` von Regeldeklarationen auf eine neue Zeile
+* Setze Leerzeilen zwischen Regeldeklarationen
 
-**Bad**
+**Schlecht**
 
 ```css
 .avatar{
@@ -93,7 +93,7 @@ Schließlich geben Eigenschaften den ausgewählten Elementen einer Regeldeklarat
 }
 ```
 
-**Good**
+**Gut**
 
 ```css
 .avatar {
