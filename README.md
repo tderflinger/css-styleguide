@@ -17,13 +17,13 @@
     - [Rahmen](#rahmen)
 1. [Sass](#sass)
     - [Syntax](#syntax)
-    - [Ordnung](#ordering-of-property-declarations)
+    - [Ordnung](#ordnung)
     - [Variablen](#variablen)
     - [Mixins](#mixins)
-    - [Extend Anweisung](#extend-directive)
-    - [Nested selectors](#nested-selectors)
-1. [Translation](#translation)
-1. [License](#license)
+    - [Extend Anweisung](#extend-anweisung)
+    - [Verschachtelte Selektoren](#verschachtelte-selektoren)
+1. [Übersetzungen](#übersetzungen)
+1. [Lizenz](#lizenz)
 
 ## Terminologie
 
@@ -267,9 +267,9 @@ Mixins sollten verwendet werden, um Ihren Code zu verbessern, Klarheit oder abst
 
 `@extend` sollte vermieden werden, da es ein unintuitives und potentiell gefährliches Verhalten hat, besonders wenn es mit verschachtelten Selektoren verwendet wird. Auch das Erweitern von Platzhalter-Selektoren auf oberster Ebene kann zu Problemen führen, wenn sich die Reihenfolge der Selektoren später ändert (z.B. wenn sie sich in anderen Dateien befinden und die Reihenfolge der Dateien verschoben wird). Das Gzipping sollte die meisten Einsparungen verarbeiten, die Sie mit `@extend` erzielt hätten, und Sie können Ihre Stylesheets mit Mixins gut verbessern.
 
-### Nested selectors
+### Verschachtelte Selektoren
 
-**Do not nest selectors more than three levels deep!**
+**Nicht mehr als drei Ebenen tief schachteln!**
 
 ```scss
 .page-container {
@@ -281,22 +281,22 @@ Mixins sollten verwendet werden, um Ihren Code zu verbessern, Klarheit oder abst
 }
 ```
 
-When selectors become this long, you're likely writing CSS that is:
+Wenn Selektoren so lang werden, schreiben Sie wahrscheinlich CSS, das:
 
-* Strongly coupled to the HTML (fragile) *—OR—*
-* Overly specific (powerful) *—OR—*
-* Not reusable
+* Stark gekoppelt an das HTML (zerbrechlich) ist *-ODER-*
+* Zu spezifisch (stark) ist *-ODER-*
+* Nicht wiederverwendbar ist
 
 
-Again: **never nest ID selectors!**
+Nochmals: **Verschachtele niemals ID selectors!**
 
-If you must use an ID selector in the first place (and you should really try not to), they should never be nested. If you find yourself doing this, you need to revisit your markup, or figure out why such strong specificity is needed. If you are writing well formed HTML and CSS, you should **never** need to do this.
+Wenn Sie zuerst einen ID-Selektor verwenden müssen (und Sie sollten wirklich versuchen, ohne auszukommen), sollten diese niemals verschachtelt werden. Wenn Sie sich dabei erwischen, müssen Sie Ihr Markup erneut überprüfen und herausfinden, warum diese starke Spezifität erforderlich ist. Wenn Sie gut geformtes HTML und CSS schreiben, sollten Sie dies **niemals** tun müssen.
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ nach oben](#inhaltsverzeichnis)**
 
-## Translation
+## Übersetzungen
 
-  This style guide is also available in other languages:
+  Dieser Styleguide ist auch in anderen Sprachen verfügbar:
 
   - ![id](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Indonesia.png) **Bahasa Indonesia**: [mazipan/css-style-guide](https://github.com/mazipan/css-style-guide)
   - ![tw](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Taiwan.png) **Chinese (Traditional)**: [ArvinH/css-style-guide](https://github.com/ArvinH/css-style-guide)
@@ -311,9 +311,9 @@ If you must use an ID selector in the first place (and you should really try not
   - ![vn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Vietnam.png) **Vietnamese**: [trungk18/css-style-guide](https://github.com/trungk18/css-style-guide)
   - ![vn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Italy.png) **Italian**: [antoniofull/linee-guida-css](https://github.com/antoniofull/linee-guida-css)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ nach oben](#inhaltsverzeichnis)**
 
-## License
+## Lizenz
 
 (The MIT License)
 
@@ -325,4 +325,4 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ nach oben](#inhaltsverzeichnis)**
