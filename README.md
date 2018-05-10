@@ -283,9 +283,9 @@ Mixins sollten verwendet werden, um Ihren Code zu verbessern, Klarheit oder abst
 
 Wenn Selektoren so lang werden, schreiben Sie wahrscheinlich CSS, das:
 
-* Stark gekoppelt an das HTML (zerbrechlich) ist *-ODER-*
-* Zu spezifisch (stark) ist *-ODER-*
-* Nicht wiederverwendbar ist
+* stark gekoppelt an das HTML (zerbrechlich) ist *-ODER-*
+* zu spezifisch (stark) ist *-ODER-*
+* nicht wiederverwendbar ist
 
 
 Nochmals: **Verschachtele niemals ID selectors!**
