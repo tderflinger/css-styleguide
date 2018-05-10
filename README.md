@@ -71,7 +71,7 @@ Schließlich geben Eigenschaften den ausgewählten Elementen einer Regeldeklarat
 
 * Verwende Soft Tabs (2 Leerzeichen) für die Einrückung.
 * Bevorzuge Bindestriche gegenüber camelCasing in Klassennamen.
-  - Unterstriche und PascalCasing sind in Ordnung, wenn Sie BEM verwenden (siehe[OOCSS und BEM](#oocss-and-bem) unten).
+  - Unterstriche und PascalCasing sind in Ordnung, wenn Sie BEM verwenden (siehe [OOCSS und BEM](#oocss-und-bem) unten).
 * Nutze keine ID Selektoren
 * Wenn Du mehrere Selektoren in einer Regeldeklaration verwenden, gib jedem Selektor eine eigene Zeile.
 * Setze ein Leerzeichen vor die öffnende Klammer `{` in Regeldeklarationen.
