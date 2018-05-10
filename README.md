@@ -172,23 +172,23 @@ function ListingCard() {
 
 Es ist zwar möglich, Elemente nach ID in CSS auszuwählen, sollte aber generell als Anti-Pattern betrachtet werden. ID-Selektoren führen ein unnötig hohes Maß an [Spezifität](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) in Ihre Regeldeklarationen ein und sind nicht wiederverwendbar.
 
-Weitere Informationen zu diesem Thema finden Sie im Artikel [Artikel von CSS Wizardry's](http://csswizardry.com/2014/07/hacks-for-dealing-with-specificity/) über den Umgang mit der Spezifität.
+Weitere Informationen zu diesem Thema findest Du im [Artikel von CSS Wizardry's](http://csswizardry.com/2014/07/hacks-for-dealing-with-specificity/) über den Umgang mit der Spezifität.
 
-### JavaScript hooks
+### JavaScript-Haken
 
-Avoid binding to the same class in both your CSS and JavaScript. Conflating the two often leads to, at a minimum, time wasted during refactoring when a developer must cross-reference each class they are changing, and at its worst, developers being afraid to make changes for fear of breaking functionality.
+Vermeide die Bindung an die gleiche Klasse in Ihrem CSS und JavaScript. Das Zusammenführen der beiden führt oft zu einem Minimum an Zeitverschwendung beim Refactoring, wenn ein Entwickler jede Klasse, die er ändert, vergleichen muss. Im schlimmsten Fall haben Entwickler Angst, Änderungen vorzunehmen, aus Sorge, die Funktionalität zu brechen.
 
-We recommend creating JavaScript-specific classes to bind to, prefixed with `.js-`:
+Wir empfehlen, JavaScript-spezifische Klassen zu erstellen, die mit dem Präfix `.js-` versehen sind:
 
 ```html
 <button class="btn btn-primary js-request-to-book">Request to Book</button>
 ```
 
-### Border
+### Rahmen
 
-Use `0` instead of `none` to specify that a style has no border.
+Verwenden Sie `0` anstelle von `none`, um anzugeben, dass ein Stil keinen Rahmen hat.
 
-**Bad**
+**Schlecht**
 
 ```css
 .foo {
@@ -196,27 +196,27 @@ Use `0` instead of `none` to specify that a style has no border.
 }
 ```
 
-**Good**
+**Gut**
 
 ```css
 .foo {
   border: 0;
 }
 ```
-**[⬆ back to top](#table-of-contents)**
+**[⬆ nach oben](#inhaltsverzeichnis)**
 
 ## Sass
 
 ### Syntax
 
-* Use the `.scss` syntax, never the original `.sass` syntax
-* Order your regular CSS and `@include` declarations logically (see below)
+* Verwende die `.scss` Syntax, niemals die ursprüngliche `.sass` Syntax.
+* Ordnen Sie Ihre regulären CSS und `@include` Deklarationen logisch an (siehe unten)
 
-### Ordering of property declarations
+### Ordnung der Eigenschaftsdeklarationen
 
-1. Property declarations
+1. Eigenschaftsdeklarationen
 
-    List all standard property declarations, anything that isn't an `@include` or a nested selector.
+    Listet alle Standard-Eigenschaftsdeklarationen auf, alles, was kein `@include` oder ein geschachtelter Selektor ist.
 
     ```scss
     .btn-green {
@@ -226,9 +226,9 @@ Use `0` instead of `none` to specify that a style has no border.
     }
     ```
 
-2. `@include` declarations
+2. `@include` Deklarationen
 
-    Grouping `@include`s at the end makes it easier to read the entire selector.
+    Die Gruppierung von `@include` am Ende erleichtert das Lesen des gesamten Selektors.
 
     ```scss
     .btn-green {
@@ -239,9 +239,9 @@ Use `0` instead of `none` to specify that a style has no border.
     }
     ```
 
-3. Nested selectors
+3. Verschachtelte Selektoren
 
-    Nested selectors, _if necessary_, go last, and nothing goes after them. Add whitespace between your rule declarations and nested selectors, as well as between adjacent nested selectors. Apply the same guidelines as above to your nested selectors.
+    Verschachtelte Selektoren, _wenn nötig_, gehen zuletzt, und nichts geht ihnen nach. Fügen Sie Leerzeichen zwischen Ihren Regeldeklarationen und verschachtelten Selektoren sowie zwischen benachbarten verschachtelten Selektoren hinzu. Wenden Sie die gleichen Richtlinien wie oben auf Ihre verschachtelten Selektoren an.
 
     ```scss
     .btn {
@@ -255,17 +255,17 @@ Use `0` instead of `none` to specify that a style has no border.
     }
     ```
 
-### Variables
+### Variablen
 
-Prefer dash-cased variable names (e.g. `$my-variable`) over camelCased or snake_cased variable names. It is acceptable to prefix variable names that are intended to be used only within the same file with an underscore (e.g. `$_my-variable`).
+Bevorzugen Sie Variablennamen mit Bindestrich (z.B. `$my-variable`) gegenüber camelCased oder snake_cased Variablennamen. Es ist zulässig, Variablennamen, die nur innerhalb derselben Datei verwendet werden sollen, einen Unterstrich voranzustellen (z.B. `$_my-variable`).
 
 ### Mixins
 
-Mixins should be used to DRY up your code, add clarity, or abstract complexity--in much the same way as well-named functions. Mixins that accept no arguments can be useful for this, but note that if you are not compressing your payload (e.g. gzip), this may contribute to unnecessary code duplication in the resulting styles.
+Mixins sollten verwendet werden, um Ihren Code zu verbessern, Klarheit oder abstrakte Komplexität zu schaffen - ähnlich wie gut benannte Funktionen. Mixins, die keine Argumente akzeptieren, können dafür nützlich sein, aber beachten Sie, dass, wenn Sie Ihre Nutzdaten nicht komprimieren (z.B. gzip), dies zu unnötiger Code-Verdopplung in den resultierenden Stilen beitragen kann.
 
-### Extend directive
+### Extend Anweisung
 
-`@extend` should be avoided because it has unintuitive and potentially dangerous behavior, especially when used with nested selectors. Even extending top-level placeholder selectors can cause problems if the order of selectors ends up changing later (e.g. if they are in other files and the order the files are loaded shifts). Gzipping should handle most of the savings you would have gained by using `@extend`, and you can DRY up your stylesheets nicely with mixins.
+`@extend` sollte vermieden werden, da es ein unintuitives und potentiell gefährliches Verhalten hat, besonders wenn es mit verschachtelten Selektoren verwendet wird. Auch das Erweitern von Platzhalter-Selektoren auf oberster Ebene kann zu Problemen führen, wenn sich die Reihenfolge der Selektoren später ändert (z.B. wenn sie sich in anderen Dateien befinden und die Reihenfolge der Dateien verschoben wird). Das Gzipping sollte die meisten Einsparungen verarbeiten, die Sie mit `@extend` erzielt hätten, und Sie können Ihre Stylesheets mit Mixins gut verbessern.
 
 ### Nested selectors
 
