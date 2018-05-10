@@ -22,7 +22,7 @@
     - [Mixins](#mixins)
     - [Extend Anweisung](#extend-anweisung)
     - [Verschachtelte Selektoren](#verschachtelte-selektoren)
-1. [Übersetzungen](#übersetzungen)
+1. [Übersetzungen](#ubersetzungen)
 1. [Lizenz](#lizenz)
 
 ## Terminologie
@@ -299,8 +299,8 @@ Wenn Sie zuerst einen ID-Selektor verwenden müssen (und Sie sollten wirklich ve
   Dieser Styleguide ist auch in anderen Sprachen verfügbar:
 
   - ![id](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Indonesia.png) **Bahasa Indonesia**: [mazipan/css-style-guide](https://github.com/mazipan/css-style-guide)
-  - ![tw](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Taiwan.png) **Chinesisch (Traditionell)**: [ArvinH/css-style-guide](https://github.com/ArvinH/css-style-guide)
-  - ![cn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/China.png) **Chinesisch (Einfach)**: [Zhangjd/css-style-guide](https://github.com/Zhangjd/css-style-guide)
+  - ![tw](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Taiwan.png) **Chinesisch (traditionell)**: [ArvinH/css-style-guide](https://github.com/ArvinH/css-style-guide)
+  - ![cn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/China.png) **Chinesisch (vereinfacht)**: [Zhangjd/css-style-guide](https://github.com/Zhangjd/css-style-guide)
   - ![fr](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/France.png) **Französisch**: [mat-u/css-style-guide](https://github.com/mat-u/css-style-guide)
   - ![ja](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Japan.png) **Japanisch**: [nao215/css-style-guide](https://github.com/nao215/css-style-guide)
   - ![ko](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/South-Korea.png) **Koreanisch**: [CodeMakeBros/css-style-guide](https://github.com/CodeMakeBros/css-style-guide)
