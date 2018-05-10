@@ -1,11 +1,11 @@
-# Airbnb CSS / Sass Styleguide
+# Airbnb CSS / Sass Styleguide auf Deutsch
 
-*A mostly reasonable approach to CSS and Sass*
+*Ein meist vernünftiger Ansatz für CSS und Sass*
 
-## Table of Contents
+## Inhaltsverzeichnis
 
-1. [Terminology](#terminology)
-    - [Rule Declaration](#rule-declaration)
+1. [Terminologie](#terminologie)
+    - [Regeldeklaration](#regeldeklaration)
     - [Selectors](#selectors)
     - [Properties](#properties)
 1. [CSS](#css)
@@ -25,11 +25,11 @@
 1. [Translation](#translation)
 1. [License](#license)
 
-## Terminology
+## Terminologie
 
-### Rule declaration
+### Regeldeklaration
 
-A “rule declaration” is the name given to a selector (or a group of selectors) with an accompanying group of properties. Here's an example:
+Eine "Regeldeklaration" ist der Name eines Selektors (oder einer Gruppe von Selektoren) mit einer zugehörigen Gruppe von Eigenschaften. Hier ist ein Beispiel:
 
 ```css
 .listing {
@@ -38,9 +38,9 @@ A “rule declaration” is the name given to a selector (or a group of selector
 }
 ```
 
-### Selectors
+### Selektoren
 
-In a rule declaration, “selectors” are the bits that determine which elements in the DOM tree will be styled by the defined properties. Selectors can match HTML elements, as well as an element's class, ID, or any of its attributes. Here are some examples of selectors:
+In einer Regeldeklaration sind "Selektoren" die Werte, die bestimmen, welche Elemente im DOM-Baum durch die definierten Eigenschaften gestylt werden. Selektoren können sowohl HTML-Elemente als auch die Klasse, ID oder eines der Attribute eines Elements abgleichen. Hier sind einige Beispiele von Selektoren:
 
 ```css
 .my-element-class {
@@ -52,9 +52,9 @@ In a rule declaration, “selectors” are the bits that determine which element
 }
 ```
 
-### Properties
+### Eigenschaften
 
-Finally, properties are what give the selected elements of a rule declaration their style. Properties are key-value pairs, and a rule declaration can contain one or more property declarations. Property declarations look like this:
+Schließlich geben Eigenschaften den ausgewählten Elementen einer Regeldeklaration ihren Stil. Eigenschaften sind Schlüssel-Wert-Paare, und eine Regeldeklaration kann eine oder mehrere Eigenschaftsdeklarationen enthalten. Eigenschaftsdeklarationen sehen so aus:
 
 ```css
 /* some selector */ {
