@@ -296,6 +296,8 @@ Wenn Sie zuerst einen ID-Selektor verwenden müssen (und Sie sollten wirklich ve
 
 ## Übersetzungen
 
+  Der originale Airbnb CSS / Sass Styleguide auf Englisch ist hier abrufbar: https://github.com/airbnb/css
+
   Dieser Styleguide ist auch in anderen Sprachen verfügbar:
 
   - ![id](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Indonesia.png) **Bahasa Indonesia**: [mazipan/css-style-guide](https://github.com/mazipan/css-style-guide)
@@ -310,6 +312,7 @@ Wenn Sie zuerst einen ID-Selektor verwenden müssen (und Sie sollten wirklich ve
   - ![es](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Spain.png) **Spanisch**: [ismamz/guia-de-estilo-css](https://github.com/ismamz/guia-de-estilo-css)
   - ![vn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Vietnam.png) **Vietnamesisch**: [trungk18/css-style-guide](https://github.com/trungk18/css-style-guide)
   - ![vn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Italy.png) **Italienisch**: [antoniofull/linee-guida-css](https://github.com/antoniofull/linee-guida-css)
+
 
 **[⬆ nach oben](#inhaltsverzeichnis)**
 
