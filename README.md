@@ -241,7 +241,7 @@ Verwenden Sie `0` anstelle von `none`, um anzugeben, dass ein Stil keinen Rahmen
 
 3. Verschachtelte Selektoren
 
-    Verschachtelte Selektoren, _wenn nötig_, gehen zuletzt, und nichts geht ihnen nach. Fügen Sie Leerzeichen zwischen Ihren Regeldeklarationen und verschachtelten Selektoren sowie zwischen benachbarten verschachtelten Selektoren hinzu. Wenden Sie die gleichen Richtlinien wie oben auf Ihre verschachtelten Selektoren an.
+    Verschachtelte Selektoren, _wenn nötig_, gehen zuletzt, und nichts geht ihnen nach. Füge Leerzeichen zwischen Deine Regeldeklarationen und verschachtelten Selektoren sowie zwischen benachbarten verschachtelten Selektoren hinzu. Wende die gleichen Richtlinien wie oben auf Deine verschachtelten Selektoren an.
 
     ```scss
     .btn {
