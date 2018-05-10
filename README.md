@@ -164,15 +164,15 @@ function ListingCard() {
 .ListingCard__content { }
 ```
 
-  * `.ListingCard` is the “block” and represents the higher-level component
-  * `.ListingCard__title` is an “element” and represents a descendant of `.ListingCard` that helps compose the block as a whole.
-  * `.ListingCard--featured` is a “modifier” and represents a different state or variation on the `.ListingCard` block.
+  * `.ListingCard` ist der "Block" und stellt die übergeordnete Komponente dar.
+  * `.ListingCard__title` ist ein "Element" und repräsentiert einen Nachfahren von `.ListingCard`, der hilft, den Block als Ganzes zu bilden.
+  * `.ListingCard--featured` ist ein "Modifikator" und repräsentiert einen anderen Zustand oder eine andere Variante des `.ListingCard` Blocks.
 
-### ID selectors
+### ID Selektoren
 
-While it is possible to select elements by ID in CSS, it should generally be considered an anti-pattern. ID selectors introduce an unnecessarily high level of [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) to your rule declarations, and they are not reusable.
+Es ist zwar möglich, Elemente nach ID in CSS auszuwählen, sollte aber generell als Anti-Pattern betrachtet werden. ID-Selektoren führen ein unnötig hohes Maß an [Spezifität] (https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) in Ihre Regeldeklarationen ein und sind nicht wiederverwendbar.
 
-For more on this subject, read [CSS Wizardry's article](http://csswizardry.com/2014/07/hacks-for-dealing-with-specificity/) on dealing with specificity.
+Weitere Informationen zu diesem Thema finden Sie im Artikel [CSS Wizardry's article] (http://csswizardry.com/2014/07/hacks-for-dealing-with-specificity/) über den Umgang mit der Spezifität.
 
 ### JavaScript hooks
 
