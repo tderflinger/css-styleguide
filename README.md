@@ -10,8 +10,8 @@
     - [Eigenschaften](#eigenschaften)
 1. [CSS](#css)
     - [Formatierung](#formatierung)
-    - [Comments](#comments)
-    - [OOCSS and BEM](#oocss-and-bem)
+    - [Kommentare](#kommentare)
+    - [OOCSS und BEM](#oocss-und-bem)
     - [ID Selectors](#id-selectors)
     - [JavaScript hooks](#javascript-hooks)
     - [Border](#border)
@@ -111,8 +111,8 @@ Schließlich geben Eigenschaften den ausgewählten Elementen einer Regeldeklarat
 ### Kommentare
 
 * Bevorzuge Zeilen-Kommentare (`//` in Sass-Land), vor Blockkommentaren.
-* Bevorzugen Sie Kommentare auf einer eigenen Zeile. Vermeiden Sie Kommentare am Zeilenende.
-* Schreiben Sie detaillierte Kommentare für Code, der nicht selbstdokumentierend ist:
+* Bevorzuge Kommentare auf einer eigenen Zeile. Vermeide Kommentare am Zeilenende.
+* Schreibe detaillierte Kommentare für Code, der nicht selbstdokumentierend ist:
   - Nutzung des z-index
   - Kompatibilität oder browserspezifische Hacks
 
@@ -127,17 +127,17 @@ Aus diesen Gründen empfehlen wir eine Kombination von OOCSS und BEM:
 
 **OOCSS**, oder "Object Oriented CSS", ist ein Ansatz zum Schreiben von CSS, der Dich dazu anregt, Deine Stylesheets als eine Sammlung von "Objekten" zu betrachten: wiederverwendbare, wiederholbare Schnipsel, die unabhängig voneinander auf einer Website verwendet werden können.
 
-  * Nicole Sullivan's [OOCSS wiki](https://github.com/stubbornella/oocss/wiki)
-  * Smashing Magazine's [Introduction to OOCSS](http://www.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/)
+  * Nicole Sullivan's [OOCSS wiki](https://github.com/stubbornella/oocss/wiki) (Englisch)
+  * Smashing Magazine's [Introduction to OOCSS](http://www.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/) (Englisch)
 
-**BEM**, or “Block-Element-Modifier”, is a _naming convention_ for classes in HTML and CSS. It was originally developed by Yandex with large codebases and scalability in mind, and can serve as a solid set of guidelines for implementing OOCSS.
+**BEM**, oder "Block-Element-Modifier", ist eine _Namenskonvention_ für Klassen in HTML und CSS. Es wurde ursprünglich von Yandex mit großen Codebasen und Skalierbarkeit im Auge entwickelt und kann als eine solide Reihe von Richtlinien für die Umsetzung von OOCSS dienen.
 
   * CSS Trick's [BEM 101](https://css-tricks.com/bem-101/)
   * Harry Roberts' [introduction to BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
 
-We recommend a variant of BEM with PascalCased “blocks”, which works particularly well when combined with components (e.g. React). Underscores and dashes are still used for modifiers and children.
+Wir empfehlen eine Variante von BEM mit PascalCased "Blöcken", die in Kombination mit Komponenten (z.B. React) besonders gut funktioniert. Unterstriche und Bindestriche werden weiterhin für Modifikatoren und Kinder verwendet.
 
-**Example**
+**Beispiel**
 
 ```jsx
 // ListingCard.jsx
