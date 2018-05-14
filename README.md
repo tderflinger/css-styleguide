@@ -265,7 +265,7 @@ Mixins sollten verwendet werden, um Deinen Code zu verbessern, Klarheit oder abs
 
 ### Extend Anweisung
 
-`@extend` sollte vermieden werden, da es ein unintuitives und potentiell gefährliches Verhalten hat, besonders wenn es mit verschachtelten Selektoren verwendet wird. Auch das Erweitern von Platzhalter-Selektoren auf oberster Ebene kann zu Problemen führen, wenn sich die Reihenfolge der Selektoren später ändert (z.B. wenn sie sich in anderen Dateien befinden und die Reihenfolge der Dateien verschoben wird). Das Gzipping sollte die meisten Einsparungen verarbeiten, die Sie mit `@extend` erzielt hätten, und Sie können Ihre Stylesheets mit Mixins gut verbessern.
+`@extend` sollte vermieden werden, da es ein unintuitives und potentiell gefährliches Verhalten hat, besonders wenn es mit verschachtelten Selektoren verwendet wird. Auch das Erweitern von Platzhalter-Selektoren auf oberster Ebene kann zu Problemen führen, wenn sich die Reihenfolge der Selektoren später ändert (z.B. wenn sie sich in anderen Dateien befinden und die Reihenfolge der Dateien verschoben wird). Das Gzipping sollte die meisten Einsparungen verarbeiten, die Du mit `@extend` erzielt hättest, und Du kannst Deine Stylesheets mit Mixins gut verbessern.
 
 ### Verschachtelte Selektoren
 
