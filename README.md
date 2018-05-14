@@ -176,7 +176,7 @@ Weitere Informationen zu diesem Thema findest Du im [Artikel von CSS Wizardry's]
 
 ### JavaScript-Haken
 
-Vermeide die Bindung an die gleiche Klasse in Ihrem CSS und JavaScript. Das Zusammenführen der beiden führt oft zu einem Minimum an Zeitverschwendung beim Refactoring, wenn ein Entwickler jede Klasse, die er ändert, vergleichen muss. Im schlimmsten Fall haben Entwickler Angst, Änderungen vorzunehmen, aus Sorge, die Funktionalität zu brechen.
+Vermeide die Bindung an die gleiche Klasse in Deinem CSS und JavaScript. Das Zusammenführen der beiden führt oft zu einem Minimum an Zeitverschwendung beim Refactoring, wenn ein Entwickler jede Klasse, die er ändert, vergleichen muss. Im schlimmsten Fall haben Entwickler Angst, Änderungen vorzunehmen, aus Sorge, die Funktionalität zu brechen.
 
 Wir empfehlen, JavaScript-spezifische Klassen zu erstellen, die mit dem Präfix `.js-` versehen sind:
 
@@ -186,7 +186,7 @@ Wir empfehlen, JavaScript-spezifische Klassen zu erstellen, die mit dem Präfix 
 
 ### Rahmen
 
-Verwenden Sie `0` anstelle von `none`, um anzugeben, dass ein Stil keinen Rahmen hat.
+Verwende `0` anstelle von `none`, um anzugeben, dass ein Stil keinen Rahmen hat.
 
 **Schlecht**
 
@@ -210,7 +210,7 @@ Verwenden Sie `0` anstelle von `none`, um anzugeben, dass ein Stil keinen Rahmen
 ### Syntax
 
 * Verwende die `.scss` Syntax, niemals die ursprüngliche `.sass` Syntax.
-* Ordnen Sie Ihre regulären CSS und `@include` Deklarationen logisch an (siehe unten)
+* Ordne Deine regulären CSS und `@include` Deklarationen logisch an (siehe unten)
 
 ### Ordnung
 
@@ -257,11 +257,11 @@ Verwenden Sie `0` anstelle von `none`, um anzugeben, dass ein Stil keinen Rahmen
 
 ### Variablen
 
-Bevorzugen Sie Variablennamen mit Bindestrich (z.B. `$my-variable`) gegenüber camelCased oder snake_cased Variablennamen. Es ist zulässig, Variablennamen, die nur innerhalb derselben Datei verwendet werden sollen, einen Unterstrich voranzustellen (z.B. `$_my-variable`).
+Bevorzuge Variablennamen mit Bindestrich (z.B. `$my-variable`) gegenüber camelCased oder snake_cased Variablennamen. Es ist zulässig, Variablennamen, die nur innerhalb derselben Datei verwendet werden sollen, einen Unterstrich voranzustellen (z.B. `$_my-variable`).
 
 ### Mixins
 
-Mixins sollten verwendet werden, um Ihren Code zu verbessern, Klarheit oder abstrakte Komplexität zu schaffen - ähnlich wie gut benannte Funktionen. Mixins, die keine Argumente akzeptieren, können dafür nützlich sein, aber beachten Sie, dass, wenn Sie Ihre Nutzdaten nicht komprimieren (z.B. gzip), dies zu unnötiger Code-Verdopplung in den resultierenden Stilen beitragen kann.
+Mixins sollten verwendet werden, um Deinen Code zu verbessern, Klarheit oder abstrakte Komplexität zu schaffen - ähnlich wie gut benannte Funktionen. Mixins, die keine Argumente akzeptieren, können dafür nützlich sein, aber beachte, dass, wenn Du Deine Nutzdaten nicht komprimieren (z.B. gzip), dies zu unnötiger Code-Verdopplung in den resultierenden Stilen beitragen kann.
 
 ### Extend Anweisung
 
@@ -281,7 +281,7 @@ Mixins sollten verwendet werden, um Ihren Code zu verbessern, Klarheit oder abst
 }
 ```
 
-Wenn Selektoren so lang werden, schreiben Sie wahrscheinlich CSS, das:
+Wenn Selektoren so lang werden, schreibst Du wahrscheinlich CSS, das:
 
 * stark gekoppelt an das HTML (zerbrechlich) ist *-ODER-*
 * zu spezifisch (stark) ist *-ODER-*
@@ -290,7 +290,7 @@ Wenn Selektoren so lang werden, schreiben Sie wahrscheinlich CSS, das:
 
 Nochmals: **Verschachtele niemals ID Selektoren!**
 
-Wenn Sie zuerst einen ID-Selektor verwenden müssen (und Sie sollten wirklich versuchen, ohne auszukommen), sollten diese niemals verschachtelt werden. Wenn Sie sich dabei erwischen, müssen Sie Ihr Markup erneut überprüfen und herausfinden, warum diese starke Spezifität erforderlich ist. Wenn Sie gut geformtes HTML und CSS schreiben, sollten Sie dies **niemals** tun müssen.
+Wenn Du zuerst einen ID-Selektor verwenden musst (und Du solltest wirklich versuchen, ohne auszukommen), sollten diese niemals verschachtelt werden. Wenn Du Dich dabei erwischst, musst Du Dein Markup erneut überprüfen und herausfinden, warum diese starke Spezifität erforderlich ist. Wenn Du gut geformtes HTML und CSS schreibst, solltest Du dies **niemals** tun müssen.
 
 **[⬆ nach oben](#inhaltsverzeichnis)**
 
